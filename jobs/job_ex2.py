@@ -8,5 +8,5 @@ class HelloWorld(Job):
     )
 
     def run(self, data, commit):
-        self.log_info(f"Xin chào, {data['your_name']} 👋")
+        self.logger.info(f"Xin chào, {data['your_name']} 👋")
         return "Job chạy thành công!"
