@@ -1,12 +1,8 @@
 from nautobot.extras.jobs import Job, StringVar
 
 class HelloWorldJob(Job):
-    name = "Hello World Job"
-
-    your_name = StringVar(
-        description="Tên của bạn là gì?",
-        default="Quốc Kiên"
-    )
+    name = "Hello Job"
+    description = "Một job đơn giản chỉ in ra thông tin"
 
     def run(self, data, commit):
-        return "Job chạy thành công!"
+        self.log_info("Xin chào từ Nautobot! 👋")
