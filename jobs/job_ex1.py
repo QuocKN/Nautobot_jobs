@@ -1,6 +1,5 @@
-from nautobot.extras.jobs import Job, StringVar, job
+from nautobot.extras.jobs import Job, StringVar
 
-@job
 class HelloWorldJob(Job):
     name = "Hello World Job"
     description = "Một Job mẫu chào thế giới"
