@@ -1,6 +1,4 @@
-from nautobot.extras.jobs import Job, StringVar, job
-
-@job
+from nautobot.extras.jobs import Job, StringVar
 class HelloWorld(Job):
     name = "Hello World"
 
