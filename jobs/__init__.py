@@ -1,8 +1,1 @@
-from nautobot.extras.jobs import register_jobs
-from .job_ex1 import HelloWorldJob
-from .job_ex2 import HelloWorld
-
-# Bắt buộc phải gọi register_jobs để Nautobot load Job
-register_jobs(HelloWorldJob, HelloWorld)
-
 
