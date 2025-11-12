@@ -9,7 +9,4 @@ class HelloWorldJob(Job):
     )
 
     def run(self, data, commit):
-        # Lấy giá trị từ data dict
-        name_value = data["your_name"]
-        self.log_info(f"Xin chào, {name_value} 👋")
         return "Job chạy thành công!"
